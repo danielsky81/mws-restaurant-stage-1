@@ -76,13 +76,16 @@ nav {
   background-color: #252831;
   text-align:center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-nav h1 {
+nav h2 {
+  display: inline-block;
+  width: 100%;
   margin: auto;
 }
-nav h1 a {
+nav h2 a {
   color: #fff;
   font-size: 14pt;
   font-weight: 200;
@@ -90,7 +93,8 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
+    flex: 1;
+    padding: 10px 40px 15px;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
@@ -138,7 +142,7 @@ nav h1 a {
   justify-content: flex-start;
   align-items: center;
 }
-.filter-options h2 {
+.filter-options h3 {
   color: white;
   font-size: 1rem;
   font-weight: normal;
@@ -161,7 +165,7 @@ nav h1 a {
 /* Media queries for medium and large devices */
 
 @media screen and (min-width: 750px) {
-  .filter-options h2 {
+  .filter-options h3 {
     width: auto;
   }
 }
@@ -264,7 +268,7 @@ nav h1 a {
   width: 100%;
 }
 .map-padding {
-  padding-top: 131px;
+  padding-top: 80px;
 }
 .inside #map {
   background-color: #ccc;
@@ -359,7 +363,7 @@ nav h1 a {
   }
   #restaurant-container {
     width: calc(50% - 60px);
-    padding-top: 151px;
+    padding-top: 100px;
     order: 2;
   }
   #reviews-container {

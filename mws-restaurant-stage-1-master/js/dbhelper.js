@@ -160,6 +160,10 @@ class DBHelper {
     return (`${restaurant.srcset}`);
   }
 
+  static arialForRestaurant(restaurant) {
+    return (`View details of ${restaurant.title}`);
+  }
+
   /**
    * Restaurant image URL.
    */
